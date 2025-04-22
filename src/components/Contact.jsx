@@ -48,6 +48,7 @@ function Contact() {
                 <div className={styles.footerText}>
                     <p>&copy;2025 All Rights Reserved</p>
                     <p>Developed by Abhishek Prajapati</p>
+                    <p>This site is deployed</p>
                 </div>
             </div>
         </>

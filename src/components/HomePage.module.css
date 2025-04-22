@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&family=Special+Gothic+Expanded+One&display=swap');
+
+.mainContainer {
+    margin: 10px auto;
+    position: relative;
+    top: 80px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px); /* Start lower */
+    animation: slideUpFromBottom 1s ease-out forwards, fadeIn 1s ease-out forwards;
+}
+
+.upperBar {
+    border: 1px solid grey;
+    padding: 6px 15px;
+    border-radius: 1.1rem;
+    margin-bottom: 25px;
+    font-size: 16px;
+    opacity: 0;
+    transform: translateY(20px); 
+    animation: slideUpFromBottom 1s ease-out forwards, fadeIn 1s ease-out forwards;
+}
+.upperBar:hover{
+    cursor: pointer;
+
+}
+
+.slogan {
+    margin: 10px 0px 5vh 0px;
+    gap: 20px;
+    font-size: 22px;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Press Start 2P", system-ui;
+    opacity: 0;
+    transform: translateY(20px); 
+    animation: slideUpFromBottom 1s ease-out forwards, fadeIn 1s ease-out forwards;
+}
+
+.sloganMobile {
+    display: none;
+}
+
+.aboutSection {
+    margin: 0px 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    gap: 5px;
+    opacity: 0;
+    transform: translateY(20px); 
+    animation: slideUpFromBottom 1s ease-out forwards, fadeIn 1s ease-out forwards;
+    margin-bottom: 5vh;
+}
+
+.aboutSection span {
+    font-size: 16px;
+    font-weight: 680;
+    color: rgb(182, 182, 182);
+}
+
+.buttons{
+    gap: 20px;
+    display: flex;
+    transition: 3s ease-in-out;
+   
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.025);
+    outline: none;
+    
+}
+.buttons button{
+    font-family: "Nunito", sans-serif;
+    background: none;
+    color: white;
+    border: 1px solid grey;
+    outline: none;
+    padding: 6px 16px;
+    border-radius: 1.1rem;
+    font-size: 14px;
+    font-weight: 590;
+    color: rgba(200, 200, 200, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socialIcons{
+    display: flex;
+    gap: 30px;
+    margin: 30px 0px;
+    list-style-type: none;
+    transition: s ease-in-out;
+}
+.socialIcons a{
+    color: rgba(200, 200, 200, 0.85);
+
+}
+.socialIcons li:hover{
+    cursor: pointer;
+    color: white;
+    transform: scale(1.05);
+    
+}
+.activeUser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    font-size: 14px;
+    animation: slideUpFromBottom 1s ease-out forwards;
+}
+.greenDot{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #00ff55;
+    box-shadow: 0 0 8px 2px #00ff55;
+    animation: blink 1.2s infinite;
+}
+
+
+
+
+
+@media (min-width: 350px) and (max-width: 870px) {
+    .mainContainer {
+        top: 70px;
+        margin: 15px 20px;
+    }
+
+    .upperBar {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .slogan {
+        display: none;
+    }
+
+    .sloganMobile {
+        display: flex;
+        margin: 10px 15px 5vh 15px;
+        font-size: 15px;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: "Press Start 2P", system-ui;
+    }
+    .aboutSection {
+        margin: 0px 5px;
+        gap: 10px;
+        margin-bottom: 4vh;
+       
+    }
+    buttons{
+        font-size: 14px;
+    }
+    
+}
+
+@keyframes slideUpFromBottom {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}

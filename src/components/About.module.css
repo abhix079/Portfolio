@@ -1,0 +1,41 @@
+.mainContainer {
+    position: relative;
+    color: white;
+}
+
+.heading {
+    font-size: 24px;
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    font-weight: 650;
+    justify-content: center;
+}
+
+span {
+    font-size: 24px;
+    font-weight: 650;
+}
+
+.hrLine {
+    margin: 5px 10px;
+    border: none;
+    border-top: 1px solid rgb(45, 79, 99);
+}
+
+.aboutSection {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 0.7s ease-out forwards;
+    animation-delay: 0.3s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

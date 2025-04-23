@@ -37,8 +37,8 @@
     </div>
 
     <div className={styles.socialIcons}>
-    <a href="https://leetcode.com/u/abhix079/" target="_blank"> <li>  <SiLeetcode size={19}/></li></a>
-    <a href="https://github.com/abhix079" target="_blank"><li> <FiGithub size={19}/></li></a>
+    <a href="https://leetcode.com/u/" target="_blank"> <li>  <SiLeetcode size={19}/></li></a>
+    <a href="https://github.com/abx0" target="_blank"><li> <FiGithub size={19}/></li></a>
     <a href="https://www.linkedin.com/in/abhix079/" target="_blank"><li> <FaLinkedinIn size={19}/></li></a>
     </div>
     <div className={styles.activeUser}>

@@ -1,0 +1,15 @@
+.mainContainer {
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(20px);
+    animation: slideUpFromBottom 1s ease-out forwards, fadeIn 1s ease-out forwards;
+    margin-bottom: 50px;
+  }
+  
+  .mainHeading h1 {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+  

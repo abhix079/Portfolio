@@ -19,7 +19,7 @@
 }
 
 .mainHeading h1 {
-    font-size: 23.5px;
+    font-size: 26px;
 }
 
 .techGrid {
@@ -73,4 +73,10 @@
 .techItem span {
     font-size: 14px;
     font-weight: 590;
+}
+@media (min-width: 350px) and (max-width: 870px){
+    .mainHeading h1 {
+        font-size: 23.5px;
+    }
+
 }

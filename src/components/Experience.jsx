@@ -1,8 +1,16 @@
+import styles from './Experience.module.css'
+
 function Experience() {
     return (
-      <div style={{ height: '100vh', padding: '2rem',}}>
-        <h1>Experience Section</h1>
-        <p>Coming soon...</p>
+      <div className={styles.mainContainer}>
+      <div className={styles.mainHeading}>
+        <h1>Experience</h1>
+      </div>
+
+      <div className={styles.expSection}>
+        
+
+      </div>
       </div>
     );
   }

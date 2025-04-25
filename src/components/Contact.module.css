@@ -6,7 +6,7 @@
 }
 
 .mainHeading h1 {
-    font-size: 23.5px;
+    font-size: 26px;
 }
 
 #spanHeading {
@@ -111,4 +111,9 @@
     .rightSide textarea {
         width: 80vw;
     }
+
+.mainHeading h1 {
+    font-size: 23.5px;
+}
+
 }

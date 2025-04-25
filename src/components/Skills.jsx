@@ -73,9 +73,9 @@ function Skills() {
                             alt={tech.name}
                             className={styles.techImage}
                             style={{
-                                ...tech.style, // Apply custom size if defined
+                                ...tech.style,
                                 filter: tech.name === 'Express.js' ? 'invert(1)' : 'none',
-                                verticalAlign: 'top' // Ensures alignment with text
+                                verticalAlign: 'top' 
                             }}
                         />
                         <span>{tech.name}</span>

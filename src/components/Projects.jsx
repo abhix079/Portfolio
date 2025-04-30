@@ -26,7 +26,7 @@ const projects = [
       
   },
   {
-    name: "E-commerce App",
+    name: "Visitor Tracking System",
     image: avts,
     duration: {
       start: "Jan 2025",

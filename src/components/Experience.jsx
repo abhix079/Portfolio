@@ -8,6 +8,11 @@ function Experience() {
       </div>
 
       <div className={styles.expSection}>
+         <div className={styles.expCard}>
+            <p>XYZ</p>
+            <i>Kuch bhi random</i>
+         </div>
+
         
 
       </div>
